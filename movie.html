@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/movie.css">
+    <title>TODO STUDENTS AND MOVIE CRUD</title>
+</head>
+
+<a href="index.html" class="todo">Todo And Student</a>
+
+<div class="container mt-5">
+    <div class="row header d-flex justify-content-between">
+        <a href="movie.html"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt=""></a>
+        <button class="btn btn-sm btn-danger hideshow">Add Movie</button>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row" id="moviecontainer">
+        <!-- <div class="col-md-4">
+<div class="m-card">
+    <figure class="d-flex justify-content-between">
+        <img src="https://m.media-amazon.com/images/M/MV5BYzA2MGMxMzMtZWI3Ny00Y2Q5LTk5MjQtZThiMTdkZjhjN2EwXkEyXkFqcGdeQXJoYW5uYWg@._V1_.jpg" alt="">
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorem doloremque, cupiditate maxime adipisci similique a ut, blanditiis iusto eveniet veniam, aspernatur soluta.</p>
+        </div>
+        <div class="buttons d-flex justify-content-between">
+            <button class="btn btn-sm btn-outline-primary" onclick="onmedit(this)">Edit</button>
+            <button class="btn btn-sm btn-outline-danger" onclick="onmremove(this)">Remove</button>
+        </div>
+        <figcaption>
+            <div class="row">
+                <div class="col-md-10">
+                    <p class="ml-2">title</p>
+               </div>
+               <div class="col-md-2"><small>2</small></div>
+            </div>
+        </figcaption>
+    </figure>
+</div>
+        </div> -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="hideshow d-none" id="backdrop"></div>
+<div class="text-white d-none" id="moviemodel">
+<div class="movieheading d-flex justify-content-between p-2">
+     <span>Add Movie</span>
+    <i class="fas fa-times fa-2x hideshow" ></i>
+</div>
+
+        <form action="" id="mform">
+            <div class="form-group"><label for="mtitle">Movie Title</label><input type="text" id="mtitle" class="form-control"></div>
+            <div class="form-group"><label for="murl">Movie URL</label><input type="text" id="murl" class="form-control"></div>
+            <div class="form-group"><label for="mdescription">Movie Description</label><textarea rows="4" id="mdescription" class="form-control"></textarea></div>
+            <div class="form-group"><label for="mrating">Movie Rating</label><select class="form-control" id="mrating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+            </select></div>
+            <button class="btn btn-danger" type="submit" id="addmbtn">Add Movie</button>
+            <button class="btn btn-danger d-none" type="button" type="button" id="updatembtn">Update Movie</button>
+            <button class="btn btn-danger hideshow" type='button'>Close</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.18.0/dist/sweetalert2.all.min.js"></script>
+<script src="./assets/js/movie.js"></script>
+</body>
+
+</html>
